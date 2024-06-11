@@ -1,0 +1,150 @@
+body{
+   background:linear-gradient(to right, #DB8403 0%, #DB8403 71%,
+   #6d7278 71%, #6d7278 100%);
+   min-height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+*{
+   box-sizing: border-box;
+}
+
+.formkit-section {
+   position: relative;
+}
+
+
+
+@media (max-width: 800px){
+.fkitcontainer {
+   flex-direction: column;
+}
+}
+
+
+   @media screen and (min-width: 650px) {
+      
+   .fkitcontainer{
+      padding: 80px 40px 0 40px;
+      display: flex;
+      display: -webkit-box;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      flex-direction: row;
+      -webkit-box-pack: justify;
+      justify-content: space-between;
+   }
+}
+
+
+.fkitcontainer{
+   margin: 0 auto;
+   position: relative;
+   line-height: 25.5px;
+   z-index: auto;
+   width: 96%;
+   max-width: 1000px;
+
+}
+
+@media  screen and (min-width:650px) {
+   .formkit-section--cover .fkit-column:first-of-type{
+      -webkit-box-ordinal-group: 1;
+      -moz-box-ordinal-group: 1;
+      margin-top: 0;
+      
+   }
+}
+
+
+
+@media (max-width:800px) {
+.fkit-column{
+   order: initial !important;
+   max-width: initial !important;
+   width: initial !important;
+}
+}
+
+@media screen and ( min-width: 650px){
+   .fkit-column{
+      display: block;
+      float: none;
+      line-height: 25.5px;
+      position: static;
+   }
+}
+
+.fkit-preheader {
+   line-height: 22.7px;
+   font-weight: 700;
+   letter-spacing: 2px;
+   margin-bottom: 0.5rem;
+   text-transform: uppercase;
+   font-size: 1rem;
+}
+
+.fkit-preheader p {
+   margin: 0;
+}
+
+.fkit-header {
+   font-weight: 400;
+   display: block;
+   line-height: 25.5px;
+   position: static;
+}
+
+.fkit-header  h1 {
+    max-width: 500px;
+   width: 46%;
+   line-height: 1.2;
+   font-family:Arial, Helvetica, sans-serif;
+   font-size: calc(48px + (60 - 48) * ((100vw - 400px) / (1400 - 400)));
+}
+
+.fkit-form-content p {
+   font-size: 17px;
+   margin-top: 17px;
+   margin-bottom: 0;
+   font-weight:400;
+}
+
+.fkit-column:nth-child(2) {
+   display: flex;
+   align-items: center;
+   justify-items: center;
+}
+@media screen and (min-width:650px){
+   .fkit-column + .fkit-column {
+      margin-top: 0;
+
+   }
+}
+@media screen and (min-width:800px){
+.fkit-column:nth-of-type(2) {
+   max-width: 450px;
+}
+}
+
+button{
+   margin-top: 1em;
+   padding: 1em;
+   border-radius: 10px;
+   font-weight: 700;
+   border-style: solid grey;
+}
+button:hover{
+   cursor: pointer;
+   background-color: #6d7278;
+}
+
+#art-collection-viewer {
+   width: 370px;
+   height: 470px;
+   background-size:contain;
+   background-position: center;
+   background-image: url('file:///C:/Users/deric/Desktop/IMP/asset/image0.jpeg');
+}
